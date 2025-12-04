@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-principal {
+    width: 100%;
+    background: #ffffff;
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+nav .nav-contenido {
+   width: 100%;
+    max-width: 1200px;      
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+nav .logo {
+    height: 60px;
+    width: auto;
+    flex-shrink: 0;           
+}
+
+nav{
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 1000;
+ padding: 30px;
+ transition: all 0.5s ease-in-out;
+ background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+main{
+    flex:1;
+}
+
+.aparecer {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.aparecer.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container.galeria {
+    margin-top: 50px;  
+}
+
+.container.presupuesto {
+    margin-top: 200px;
+}
+
+.container.contacto {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+footer {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 25px 0;
+    margin-top: 40px;
+    border-top: 2px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .footer-contenido {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer .redes-sociales {
+    margin-bottom: 15px;
+}
+
+footer .redes-sociales a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+footer .redes-sociales img {
+     width: 35px;
+    height: 35px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+footer .redes-sociales img:hover {
+    transform: scale(1.15);
+}
+
+footer .direccion {
+     font-size: 15px;
+    color: #333;
+    line-height: 1.4;
+}
+
+footer .aviso-legal {
+    font-size: 14px;
+    color: #333;
+}
+
+footer .aviso-legal a {
+     color: #007bff;
+    text-decoration: none;
+}
+
+footer .aviso-legal a:hover {
+     text-decoration: underline;
+}
+
+nav .nav-links{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    font-weight: 600;
+    font-size: 18 px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+
+.nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.2em;
+}
+
+nav.nav-Scroll{
+    background-color: white;
+}
+
+.presentacion{
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap:30px;
+    margin-bottom: 150 px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+
+}
+
+.card-scroll{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(180, 151, 151);
+    border-radius: 8px;
+    box-shadow: 0 4px 10 px black;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0,5s ease-in-out;
+}
+
+.card-scroll.show{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.noticia {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+.noticia h3 {
+    margin-top: 0;
+}
+
+.noticia small {
+    color: #555;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="/apssweb/Nueva-carpeta/Trabajo-apps-web/css/estilopresupuesto.css">
+    <style>
+        div{margin-bottom: 20px;}
+    </style>
+</head>
+<body>
+     <header>
+  <nav class="header-principal">
+    <div class="nav-contenido">
+      <a href="index.html" class="logo-link">
+        <img src="https://static.vecteezy.com/system/resources/previews/006/109/678/original/computer-technology-logo-icon-design-free-vector.jpg" alt="Logo de la empresa" class="logo">
+      </a>
+      <div class="nav-links">
+        <a href="/apssweb/Nueva-carpeta/Trabajo-apps-web/index.html" class="nav-link">Inicio</a>
+        <a href="presupuesto.html" class="nav-link active">Presupuestos</a>
+        <a href="galeria.html" class="nav-link">Galería</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </div>
+    </div>
+  </nav>
+</header>
+    <form id="formulario" name="formulario" method="post" action="/apssweb/Nueva-carpeta/Trabajo-apps-web/index.html">
+        <h1 id="formulario-titulo"><u>Formulario de solicitud</u></h1>
+   <fieldset class="form-control">
+    <legend>Datos</legend>
+    <div>
+   <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre">
+    <small>Error mensaje</small>
+    </div>
+        <div>
+   <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus apellidos">
+    <small>Error mensaje</small>
+    </div>
+        <div>
+   <label for="telefono">Teléfono de contacto:</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="Escriba su telefono">
+    <small>Error mensaje</small>
+    </div>
+        <div>
+   <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" placeholder="Escriba su correo">
+    <small>Error mensaje</small>
+    </div>
+   </fieldset>
+<fieldset>
+    <legend>Presupuesto</legend>
+    <label for="seleccion-producto">Selecciona un producto:</label>
+    <select name="seleccion-producto" id="seleccion-producto">
+        <option value="">Seleccione un producto</option>
+        <option value="Placa base:150">Placa base - 150€</option>
+        <option value="Microprocesador:200">Microprocesador - 200€</option>
+        <option value="Tarjeta gráfica:250">Tarjeta gráfica - 250€</option>
+        <option value="Memoria RAM 4:300">Memoria RAM - 300€</option>
+    </select>
+    <button type ="button" id="añadir-al-carrito">Añadir al carrito</button>
+    <div class="carrito" id="contenedor-carrito">
+        <h4>Carrito actual:</h4>
+        <div id="articulos-carrito"></div>
+    </div>
+    <div class="plazo-entrega">
+        <p>Plazo de entrega:</p>
+        <label>
+            <input type="radio" name="plazo-entrega" value="0">
+            3 días 0% descuento
+        </label>
+        <label>
+            <input type="radio" name="plazo-entrega" value="0.1">
+            5 días 10% descuento
+        </label>
+        <label>
+            <input type="radio" name="plazo-entrega" value="0.2">
+            7 días 20% descuento
+        </label>
+    </div>
+    <div class="extras">
+        <p>Elige los extras para el producto:</p>
+        <label>
+            <input type="checkbox" class="checkbox-extra" value="Embalaje especial:3">
+            Embalaje especial 3€
+        </label>
+        <label>
+             <input type="checkbox" class="checkbox-extra" value="Caja sorpresa:5">
+            Caja sorpresa 5€
+        </label>
+        <label>
+             <input type="checkbox" class="checkbox-extra" value="Entrega rapida:10">
+            Mantenimiento-Instalacion 10€
+        </label>
+    </div>
+    <div>
+    <p class="total" id="presupuesto-final">Presupuesto final: 0€</p>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Aceptación condiciones y envío de presupuesto</legend>
+     <div>
+        <label for="privacidad">He leído la política de privacidad</label>
+        <input type="checkbox" id="privacidad" name="privacidad">
+    </div>
+    </fieldset>
+     <div>
+        <input type="submit" id="enviar" value="Enviar">
+        <input type="reset" id="borrar" value="Borrar">
+    </div>
+    </form>
+    <footer>
+    <div class="footer-contenido">
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <img src="https://www.meilleure-innovation.com/wp-content/uploads/2021/05/logo-bleu-officiel-facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/395/710/non_2x/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <img src="https://freepnglogo.com/images/all_img/instagram-logo-transparent-6b90.png" alt="Instagram">
+            </a>
+        </div>
+        <div class="direccion">
+            <p>Calle Asencio Bretones Nº21, Oviedo, España<br></p>
+            <p>Tel: 989000000</p>
+        </div>
+        <div class="aviso-legal">
+            <p>&copy; Todos los derechos reservados.</p>
+            <a href="aviso-legal.html">Aviso legal</a>
+        </div>
+    </div>
+</footer>
+<script src="/apssweb/Nueva-carpeta/Trabajo-apps-web/js/javapresupuesto.js"></script>
+</body>
+</html>

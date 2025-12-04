@@ -1,0 +1,163 @@
+.header-principal {
+    width: 100%;
+    padding: 10px 30px;                  
+    background-color: #fff;          
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    position: fixed;                 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-contenido {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 18px;                     
+    font-weight: 600;
+    color: #333;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+
+.nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+
+.menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #007bff;
+}
+
+.logo {
+    height: 60px;    
+    width: auto;    
+    flex-shrink: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 80px;   
+    padding-bottom: 100px; 
+    background-color: #f9f9f9;
+}
+
+small{
+    background-color: red;
+    border-radius: .5rem;
+    padding: .5rem;
+    color:#fff;
+    bottom: 0px;
+    left: 0px;
+    visibility: hidden;
+}
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control.error small{
+    visibility: visible;
+}
+
+footer {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 25px 0;
+    margin-top: 40px;
+    border-top: 2px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .footer-contenido {
+     max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer .redes-sociales {
+    display: flex;
+    gap: 15px;
+}
+
+footer .redes-sociales a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+footer .redes-sociales img {
+     width: 35px;
+    height: 35px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+footer .redes-sociales img:hover {
+    transform: scale(1.15);
+}
+
+footer .direccion {
+     font-size: 15px;
+    color: #333;
+    line-height: 1.4;
+}
+
+footer .aviso-legal {
+   font-size: 14px;
+    color: #333;
+}
+
+footer .aviso-legal a {
+   color: #007bff;
+    text-decoration: none;
+}
+
+footer .aviso-legal a:hover {
+    text-decoration: underline;
+}
